@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Counter from './Counter';
 import Input from './Input';
 
-export default function State() {
+export default function StateApp() {
     const [name,setName]=useState("Luffy");
     const [age, setAge] = useState(17)
     const [nakamatachi, setNakamatachi] = useState(["Zoro","Usopp"])

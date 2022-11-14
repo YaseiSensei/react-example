@@ -1,13 +1,15 @@
 
 import './App.css';
-/* import Entrance from './entrance/Entrance'; */
-/* import State from './states/State'; */
+import UseEffectApp from './useEffect/UseEffectApp';
+/* import EntranceApp from './entrance/EntranceApp'; */
+/* import StateApp from './states/StateApp'; */
 
 function App() {
   return (
     <div className="App">
-      {/* <Entrance></Entrance> */}
-      {/* <State></State> */}
+      {/* <EntranceApp/>*/}
+      {/* <StateApp/> */}
+     
     </div>
   );
 }

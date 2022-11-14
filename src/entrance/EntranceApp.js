@@ -2,7 +2,7 @@ import React from 'react'
 import Header from './Header';
 import User from './User';
 
-export default function Entrance() {
+export default function EntranceApp() {
     const nakamatachi=[{id:1,name:"Zoro"},{id:2,name:"Nami"},{id:3,name:"Usopp"},{id:4,name:"Sanji"},{id:5,name:"Robin"}];
   return (
     <div>
