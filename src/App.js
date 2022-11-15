@@ -5,11 +5,15 @@ import UseEffectApp from './useEffect/UseEffectApp';
 /* import StateApp from './states/StateApp'; */
 
 function App() {
+
+  
   return (
     <div className="App">
       {/* <EntranceApp/>*/}
       {/* <StateApp/> */}
-     
+      <UseEffectApp/>
+
+
     </div>
   );
 }
