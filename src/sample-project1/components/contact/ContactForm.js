@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import "../css/Contacts.css"
+import "./Contacts.css"
 
 const initialFormValues={fullname:"",bounty:""}
 export default function ContactForm({addContact,contacts}) {

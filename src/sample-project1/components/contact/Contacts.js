@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import ContactForm from './ContactForm'
 import ContactList from './ContactList'
-import "../css/Contacts.css"
+import "./Contacts.css"
 
 export default function Contacts() {
     const [contacts, setContacts] = useState([
