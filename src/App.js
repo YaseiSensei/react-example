@@ -11,8 +11,8 @@ import {
 /* import UseEffectApp from './useEffect/UseEffectApp'; */
 /* import EntranceApp from './entrance/EntranceApp'; */
 import StateApp from './states/StateApp';
-import CssModuleApp from "./css-module/CssModuleApp";
-import FetchApp from "./native-fetch/FetchApp";
+import CssModule from "./pages/css-module/CssModule";
+import Fetch from "./pages/native-fetch/Fetch";
 
 
 
@@ -66,8 +66,8 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path="/state" element={<StateApp />} />
-          <Route path='/fetch' element={<FetchApp />} />
-          <Route path='/module' element={<CssModuleApp />} />
+          <Route path='/fetch' element={<Fetch />} />
+          <Route path='/module' element={<CssModule />} />
 
           {/* Error404 */}
           <Route path='*' element={<Error404 />} />
