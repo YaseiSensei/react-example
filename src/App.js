@@ -10,7 +10,7 @@ import {
 /* import SampleApp1 from './sample-project1/Sample1'; */
 /* import UseEffect from './useEffect/UseEffect'; */
 /* import Entrance from './entrance/Entrance'; */
-import State from './pages/states/State';
+import UseState from './pages/useState/UseState';
 import CssModule from "./pages/css-module/CssModule";
 import Fetch from "./pages/native-fetch/Fetch";
 
@@ -20,7 +20,8 @@ import Fetch from "./pages/native-fetch/Fetch";
 import UserList from './pages/router/UserList';
 import UserDetails from './pages/router/UserDetails';
 import Error404 from './pages/router/Error404';
-import State from './pages/states/State';
+
+
 
 
 
@@ -66,7 +67,7 @@ function App() {
             renders the first one that matches the current URL. */}
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path="/state" element={<State />} />
+          <Route path="/state" element={<UseState />} />
           <Route path='/fetch' element={<Fetch />} />
           <Route path='/module' element={<CssModule />} />
 
