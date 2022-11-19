@@ -1,0 +1,40 @@
+#container{
+   
+    width: 400px;
+    background-color: aliceblue;
+    padding: 20px;
+}
+input{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+ul,li{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    
+}
+.list{
+    margin: 15px 0;
+
+}
+.list>li{
+    background-color: rgb(127, 172, 110);
+    padding: 5px;
+    margin-bottom: 2px ;
+    display: flex;
+    justify-content: space-between;
+
+}
+p{
+
+    padding-left: 65%;
+   
+}
+#btn{
+    margin-left: 90%;
+    margin-top: 11px;
+}
