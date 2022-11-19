@@ -6,11 +6,11 @@ import {
   Route,
   NavLink
 } from "react-router-dom";
-/* import SampleApp2 from './sample-project2/SampleApp2'; */
-/* import SampleApp1 from './sample-project1/SampleApp1'; */
-/* import UseEffectApp from './useEffect/UseEffectApp'; */
-/* import EntranceApp from './entrance/EntranceApp'; */
-import StateApp from './states/StateApp';
+/* import SampleApp2 from './sample-project2/Sample2'; */
+/* import SampleApp1 from './sample-project1/Sample1'; */
+/* import UseEffect from './useEffect/UseEffect'; */
+/* import Entrance from './entrance/Entrance'; */
+import State from './pages/states/State';
 import CssModule from "./pages/css-module/CssModule";
 import Fetch from "./pages/native-fetch/Fetch";
 
@@ -20,6 +20,7 @@ import Fetch from "./pages/native-fetch/Fetch";
 import UserList from './pages/router/UserList';
 import UserDetails from './pages/router/UserDetails';
 import Error404 from './pages/router/Error404';
+import State from './pages/states/State';
 
 
 
@@ -65,7 +66,7 @@ function App() {
             renders the first one that matches the current URL. */}
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path="/state" element={<StateApp />} />
+          <Route path="/state" element={<State />} />
           <Route path='/fetch' element={<Fetch />} />
           <Route path='/module' element={<CssModule />} />
 
