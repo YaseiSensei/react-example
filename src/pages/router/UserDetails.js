@@ -25,7 +25,7 @@ export default function UserDetails() {
     <div>
       <h1>User Detail</h1>
       {loding && <div>Loding...</div>}
-      {!loding &&<pre> {user.id} / {user.name} / {user.username} / {user.address.city} </pre>}
+      {!loding &&<pre> {user.id} / {user.name} / {user.username} /   {user.email} / {user.address?.city} </pre>}
 
       
       </div>
