@@ -20,6 +20,9 @@ import Fetch from "./pages/native-fetch/Fetch";
 import UserList from './pages/router/UserList';
 import UserDetails from './pages/router/UserDetails';
 import Error404 from './pages/router/Error404';
+import FormikSample from './pages/formik/FormikSample';
+import UseFormikSample from './pages/formik/UseFormikSample';
+import Register from './pages/formik/Register';
 
 
 
@@ -57,6 +60,15 @@ function App() {
           <li>
             <NavLink style={({ isActive }) => isActive ? activeStyle : undefined} to="/state">State</NavLink>
           </li>
+          <li>
+            <NavLink style={({ isActive }) => isActive ? activeStyle : undefined} to="/formik">Formik</NavLink>
+          </li>
+          <li>
+            <NavLink style={({ isActive }) => isActive ? activeStyle : undefined} to="/useformik">UseFormik</NavLink>
+          </li>
+          <li>
+            <NavLink style={({ isActive }) => isActive ? activeStyle : undefined} to="/validation">Validation</NavLink>
+          </li>
         </ul>
       </nav>
       <div className="App">
@@ -79,6 +91,10 @@ function App() {
           <Route path='/users' element={<UserList />} >
             <Route path=':id' element={<UserDetails />} />
           </Route>
+
+          <Route path='/formik' element={<FormikSample/>}></Route>
+          <Route path='/useformik' element={<UseFormikSample/>}></Route>
+          <Route path='/validation' element={<Register/>}></Route>
 
         </Routes>
       </div>
