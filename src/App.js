@@ -9,7 +9,6 @@ import {
 /* import SampleApp2 from './sample-project2/Sample2'; */
 /* import SampleApp1 from './sample-project1/Sample1'; */
 /* import UseEffect from './useEffect/UseEffect'; */
-/* import Entrance from './entrance/Entrance'; */
 import UseState from './pages/useState/UseState';
 import CssModule from "./pages/css-module/CssModule";
 import Fetch from "./pages/native-fetch/Fetch";
@@ -23,6 +22,7 @@ import Error404 from './pages/router/Error404';
 import FormikSample from './pages/formik/FormikSample';
 import UseFormikSample from './pages/formik/UseFormikSample';
 import Register from './pages/formik/Register';
+import MemoSample from './pages/react-memo/MemoSample';
 
 
 
@@ -49,7 +49,7 @@ function App() {
             <NavLink style={({ isActive }) => isActive ? activeStyle : undefined} to="/">Home</NavLink>
           </li>
           <li>
-            <NavLink style={({ isActive }) => isActive ? activeStyle : undefined} to="/module">About</NavLink>
+            <NavLink style={({ isActive }) => isActive ? activeStyle : undefined} to="/module">Css Module</NavLink>
           </li>
           <li>
             <NavLink style={({ isActive }) => isActive ? activeStyle : undefined} to="/fetch">fetch</NavLink>
@@ -68,6 +68,9 @@ function App() {
           </li>
           <li>
             <NavLink style={({ isActive }) => isActive ? activeStyle : undefined} to="/validation">Validation</NavLink>
+          </li>
+          <li>
+            <NavLink style={({ isActive }) => isActive ? activeStyle : undefined} to="/memo">react memo</NavLink>
           </li>
         </ul>
       </nav>
@@ -95,7 +98,7 @@ function App() {
           <Route path='/formik' element={<FormikSample/>}></Route>
           <Route path='/useformik' element={<UseFormikSample/>}></Route>
           <Route path='/validation' element={<Register/>}></Route>
-
+          <Route path='/memo' element={<MemoSample/>}></Route>
         </Routes>
       </div>
     </Router>
