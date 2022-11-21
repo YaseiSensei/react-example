@@ -24,6 +24,11 @@ import UseFormikSample from './pages/formik/UseFormikSample';
 import Register from './pages/formik/Register';
 import MemoSample from './pages/react-memo/MemoSample';
 
+import TContext from './pages/context/ThemeContext';
+import {UserProvider} from './pages/context/UserContext';
+
+import Container from './pages/context/Container';
+
 
 
 
@@ -39,7 +44,10 @@ function App() {
 
 
   return (
-
+    <TContext.ThemeProvider >
+      <UserProvider>
+      
+      
 
     <Router>
 
@@ -48,6 +56,10 @@ function App() {
           <li>
             <NavLink style={({ isActive }) => isActive ? activeStyle : undefined} to="/">Home</NavLink>
           </li>
+          <li>
+            <NavLink style={({ isActive }) => isActive ? activeStyle : undefined} to="/container">context</NavLink>
+          </li>
+         
           <li>
             <NavLink style={({ isActive }) => isActive ? activeStyle : undefined} to="/module">Css Module</NavLink>
           </li>
@@ -99,14 +111,19 @@ function App() {
           <Route path='/useformik' element={<UseFormikSample/>}></Route>
           <Route path='/validation' element={<Register/>}></Route>
           <Route path='/memo' element={<MemoSample/>}></Route>
+          
+         <Route path='/container' element={<Container/>}> </Route>
+         
         </Routes>
       </div>
     </Router>
-
+    </UserProvider>
+ </TContext.ThemeProvider>
 
   );
 }
 function Home() {
+
   return <h2>Home</h2>;
 }
 
